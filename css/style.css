@@ -1,0 +1,337 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.group, p:not(.start-p) {
+    margin-left: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.belangrijk {
+    font-weight: bold ;
+}
+
+/* standaard */
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 15% auto 10%;
+}
+
+header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+    background-color: #b5c9e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-logo {
+    max-height: 100px;
+}
+
+header a {
+    justify-content: center;
+    grid-column: 1/ 2;
+    grid-row: 1 / 2;
+    width: 6%;
+    position: absolute;
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: white;
+}
+
+footer {
+    background-color: #1f5daf;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    display: grid;
+    font-size: large;
+    align-items: center;
+}
+
+footer a {
+    border: 1px solid black;
+    margin: auto auto auto 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: darkgrey;
+}
+
+.sidemenu a {
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: darkgrey;
+    padding: 10px;
+    display: inline-block;
+}
+
+.dropdown-content a {
+    margin-top: auto;
+}
+
+.sidemenu {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #4c4d50;
+}
+
+/* Privacy policy */
+.privacy-policy {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* einde Privacy policy */
+/* einde standaard */
+
+/* specifiek startpagina */
+.start {
+    color: white;
+    background-image: url("../images/vliegveld.jpeg");
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/* startpagina menu */
+.navigatie-index {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigatie-index div {
+    border: 2px solid white;
+    background-color: black;
+    padding: 60px 100px;
+    transition: background 0.4s;
+    border-radius: 3px;
+}
+
+.navigatie-index div:hover {
+    border: 2px solid black;
+    background-color: white;
+    padding: 60px 100px;
+    transition: background 0.4s;
+}
+
+.navigatie-index div a {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navigatie-index div:hover a {
+    color: black;
+}
+/* einde startpagina menu */
+/* einde speciefiek startpagina */
+
+/* from */
+.required:after { 
+    content:"*"; 
+}
+
+input:required, option:required {
+    background-color: red;
+    color: white;
+    opacity: 0.8;
+}
+
+input:required:valid {
+    background-color: green;
+    opacity: 0.8;
+}
+
+
+input[type=submit] {
+    background-color: white;
+    padding: 16px 32px;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+/* einde inlogpagina's */
+
+/* navigatie scherm */
+.startpagina-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    color: black;
+}
+
+.startpagina-menu a {
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: black;
+    padding: 4% 8% 4% 8%;
+    background-size: cover;
+    transition: background 0.4s;
+    border-radius: 3px;
+    filter: grayscale(100%);
+}
+
+.startpagina-menu a:hover {
+    background-color: black;
+    transition: background 0.4s;
+    filter: none;    
+}
+
+.koffer {
+    background-image:url(../images/koffer.png);
+    color: white;
+}
+
+.persoonlijk {
+    background-image: url(../images/persoonlijk.png);
+    color: black;
+}
+
+.vluchten {
+    background-image: url(../images/vluchten.png);
+    color: black;
+}
+
+.invoer-vlucht {
+    background-image: url(../images/infovlucht.png);
+    color: white;
+}
+
+.invoer-passagier {
+    background-image: url(../images/passagier.png) ;
+    color: black;
+}
+/* einde navigatiescherm */
+
+/* table style */
+table {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+tr {
+    min-height: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+td, th {
+    text-align: left;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #1f5daf;
+}
+
+td a {
+    color: purple;
+}
+
+/* einde table style */
+
+.invoer-flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox-left, .flexbox-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox-left {
+    margin-right: 30px;
+}
+
+.flexbox-left label{
+    float: left;
+    width: 150px;
+}
+
+.flexbox-right label, select{
+    float: left;
+    width: 150px;
+}
+
+.submit-koffer {
+    margin-top: auto;
+}
+
+.submit-right {
+    margin-top: 15px;
+    align-items: flex-end;
+}
+
+.koffer-form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    text-align: left;
+    gap: 10px;
+}
+
+.dropdown-content {
+    font-size: small;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 15%;
+}
+
+.dropdown-element:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-rows: 15% auto 10%;
+    }
+
+    .startpagina-menu {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .dropdown-content {
+        display: block;
+        width: 30%;
+    }
+}

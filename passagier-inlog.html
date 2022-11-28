@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>passagier-inlog</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" class="nav-logo">
+            </a>
+            <h1>Gelre Airport</h1>
+        </header>
+        <main>
+            <p>U bent ingelogd als passagier.</p>
+            <p>U kunt in het volgende menu kiezen wat u wilt doen:</p>
+            <nav>
+                <div class="invoer-flexbox">
+                    <form action="ingelogd-passagier.html" method="get">
+                        <label for="pname">Passagiersnummer:</label><br>
+                        <input type="text" id="pname" name="pname" minlength="6" maxlength="6" required><br>
+                        <label for="pww">Wachtwoord</label><br>
+                        <input type="password" id="pww" name="pww" minlength="8" required>
+                        <div class="submit">
+                            <label for="submit"></label><br>
+                            <input type="submit" id="submit" name="submit" value="Log in">
+                        </div>
+                    </form>
+                </div>
+
+            </nav>
+        </main>
+        <footer>
+            <a href="privacyverklaring.html">Pivacyverklaring</a>
+        </footer>
+        <div class="sidemenu">
+            <a href="index.html" class="homebutton">Uitloggen</a>
+        </div>
+    </div>
+</body>
+
+</html>

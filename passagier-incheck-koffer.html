@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>inchecken koffer passagier</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" class="nav-logo">
+            </a>
+            <h1>Gelre Airport</h1>
+        </header>
+        <main>
+            <p>Op deze pagina kan je een koffer inchecken.</p>
+            <p>Elke keer als je op invoeren drukt, wordt er een koffer met de huidige gegevens toegevoegd.</p>
+            <p class="belangrijk">Je kan niet meer gewicht en aantal koffers toevoegen dan dat toegestaan is!</p>
+            <form action="passagier-koffer.html" method="get" class="koffer-form">
+                <label for="Objectnummer">Objectnummer</label>
+                <select name="Objectnummer" id="Objectnummer" required>
+                    <option value="">select a option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label for="gewicht">totaal gewicht koffer:</label>
+                <input type="text" name="gewicht" id="gewicht" maxlength="2" required>
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </main>
+        <footer>
+            <a href="privacyverklaring.html">Pivacyverklaring</a>
+        </footer>
+        <div class="sidemenu">
+            <a href="index.html" class="homebutton">Uitloggen</a>
+            <div class="dropdown-element">
+                <a href="ingelogd-passagier.html" class="dropdown-sidebtn">Navigatie</a>
+                <div class="dropdown-content">
+                    <a href="passagier-koffer.html">Inchecken koffer</a>
+                    <a href="persoonlijke-vluchten.html">Geboekte vluchten</a>
+                    <a href="vluchtenoverzicht.html">Overzicht vluchten</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
