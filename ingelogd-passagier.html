@@ -1,53 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>startpagina medewerker</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>startpagina passagier</title>
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo" class="nav-logo">
-            </a>
-            <h1>Gelre Airport</h1>
-        </header>
-        <main>
-            <p>U bent ingelogd als passagier.</p>
-            <p>U kunt in het volgende menu kiezen wat u wilt doen:</p>
-            <nav class="startpagina-menu">
-                <a href="passagier-koffer.html" class="koffer">
-                    <p>Inchecken koffer</p>
-                </a>
-                <a href="persoonlijke-vluchten.html" class="persoonlijk">
-                    <p>Geboekte vluchten</p>
-                </a>
-                <a href="vluchtenoverzicht.html" class="vluchten">
-                    <p>Overzicht vluchten</p>
-                </a>
-            </nav>
-        </main>
-        <footer>
-            <a href="privacyverklaring.html">Pivacyverklaring</a>
-        </footer>
-        <div class="sidemenu">
-            <a href="index.html" class="homebutton">Uitloggen</a>
-            <div class="dropdown-element">
-                <a href="ingelogd-passagier.html" class="dropdown-sidebtn">Navigatie</a>
-                <div class="dropdown-content">
-                    <a href="passagier-koffer.html">Inchecken koffer</a>
-                    <a href="persoonlijke-vluchten.html">Geboekte vluchten</a>
-                    <a href="vluchtenoverzicht.html">Overzicht vluchten</a>
-                </div>
-            </div>
+  <body>
+    <header class="navigation-bar">
+      <nav class="header-container">
+        <a href="index.html" class="img-link left">
+          <img src="images/logo.png" alt="Logo" class="nav-logo" />
+        </a>
+        <h1 class="center">Gelre Airport</h1>
+        <div class="right"></div>
+      </nav>
+    </header>
+    <div class="back-header"></div>
+    <div class="sidebar">
+      <a href="index.html" class="homebutton"><span>Uitloggen</span></a>
+      <div class="dropdown">
+        <a href="ingelogd-medewerker.html" class="dropdown-sidebtn"
+          >Navigatie</a
+        >
+        <div class="dropdown-content">
+          <a href="passagier-koffer.html">Inchecken koffer</a>
+          <a href="persoonlijke-vluchten.html">Geboekte vluchten</a>
+          <a href="vluchtenoverzicht.html">Overzicht vluchten</a>
         </div>
+      </div>
     </div>
-</body>
-
+    <main>
+      <div class="row center-content">
+        <p>U bent ingelogd als passagier.</p>
+        <p>U kunt in het volgende menu kiezen wat u wilt doen:</p>
+        <div class="startpagina-menu">
+          <a href="vluchtenoverzicht.html" class="koffer"
+            ><p>Inchecken koffers</p></a
+          >
+          <a href="invoeren-vlucht.html" class="persoonlijk"
+            ><p>geboekte vluchten</p></a
+          >
+          <a href="invoeren-passagier.html" class="vluchten"
+            ><p>overzicht vluchten</p></a
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="privacyverklaring.html" class="text-w">Pivacyverklaring</a>
+    </footer>
+  </body>
 </html>

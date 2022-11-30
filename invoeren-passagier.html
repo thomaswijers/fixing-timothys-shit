@@ -1,100 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Invoeren passagier</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <header>
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo" class="nav-logo">
-            </a>
-            <h1>Gelre Airport</h1>
-        </header>
-        <main>
-            <p>Voeg een passagier in het systeem toe via het volgende menu</p>
-            <p class="belangrijk">Voeg eerst een passagier toe voordat je koffers toevoegd aan de passagier.</p>
-            <p class="belangrijk">Druk eerst op 'Aanmaken passagier' om de passagier in het systeem toe te voegen.</p>
-            <p class="belangrijk"> Daarna kan je een koffer voor de aangemaakte passagier toevoegen</p>
-            <div class="invoer-flexbox">
-                <form action="invoeren-passagier.html" method="get" class="flexbox-left">
-                    <div>
-                        <label for="pnummer">Passagiernummer</label>
-                        <input type="text" name="pnummer" id="pnummer" minlength="6" maxlength="6" required><br>
-                    </div>
-                    <div>
-                        <label for="pnaam">Naam</label>
-                        <input type="text" name="pnaam" id="pnaam" required><br>
-                    </div>
-                    <div>
-                        <label for="vnummer">Vluchtnummer</label>
-                        <input type="text" name="vnummer" id="vnummer" required><br>
-                    </div>
-                    <div>
-                        <label for="geslacht">Geslacht</label>
-                        <input type="text" name="geslacht" id="geslacht" required><br>
-                    </div>
-                    <div>
-                        <label for="bnummer">Balienummer</label>
-                        <input type="text" name="bnummer" id="bnummer" required><br>
-                    </div>
-                    <div>
-                        <label for="stoel">Stoel</label>
-                        <input type="text" name="stoel" id="stoel" required><br>
-                    </div>
-                    <div>
-                        <label for="inchecktime">Inchecktijdstip</label>
-                        <input type="text" name="inchecktime" id="inchecktime" required><br>
-                    </div>
-                    <div>
-                        <input type="submit" name="submit" id="submit">
-                    </div>
-                </form>
-                <form action="invoeren-koffer" method="get" class="flexbox-right">
-                    <div>
-                        <label for="pnaam-koffer">Naam</label>
-                        <input type="text" name="pnaam-koffer" id="pnaam-koffer" required><br>
-                    </div>
-                    <div>
-                        <label for="Objectnummer">Objectnummer</label>
-                        <select name="Objectnummer" id="Objectnummer" required>
-                            <option value="">select a option</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select><br>
-                    </div>
-                    <div>
-                        <label for="gewicht">totaal gewicht koffer:</label>
-                        <input type="text" name="gewicht" id="gewicht" maxlength="2" required><br>
-                    </div>
-                    <div class="submit-koffer">
-                        <input type="submit" name="submit-koffer" id="submit-koffer">
-                    </div>
-                </form>
-            </div>
-        </main>
-        <footer>
-            <a href="privacyverklaring.html">Pivacyverklaring</a>
-        </footer>
-        <div class="sidemenu">
-            <a href="index.html" class="homebutton">Uitloggen</a>
-            <div class="dropdown-element">
-                <a href="ingelogd-medewerker.html" class="dropdown-sidebtn">Navigatie</a>
-                <div class="dropdown-content">
-                    <a href="vluchtenoverzicht.html">Overzicht vluchten</a>
-                    <a href="invoeren-vlucht.html">Invoeren vlucht</a> 
-                    <a href="invoeren-passagier.html">Invoeren passagier</a>
-                </div>
-            </div>
+  <body>
+    <header class="navigation-bar">
+      <nav class="header-container">
+        <a href="index.html" class="img-link left">
+          <img src="images/logo.png" alt="Logo" class="nav-logo" />
+        </a>
+        <h1 class="center">Gelre Airport</h1>
+        <div class="right"></div>
+      </nav>
+    </header>
+    <div class="back-header"></div>
+    <div class="sidebar">
+      <a href="index.html" class="homebutton"><span>Uitloggen</span></a>
+      <div class="dropdown">
+        <a href="ingelogd-medewerker.html" class="dropdown-sidebtn"
+          >Navigatie</a
+        >
+        <div class="dropdown-content">
+          <a href="vluchtenoverzicht.html">Overzicht vluchten</a>
+          <a href="invoeren-vlucht.html">Invoeren vlucht</a>
+          <a href="invoeren-passagier.html">Invoeren passagier</a>
         </div>
+      </div>
     </div>
-</body>
+    <main>
+      <div class="row center-content">
+        <div>
+          <p>Voeg een passagier in het systeem toe via het volgende menu</p>
+          <p class="belangrijk">
+            Voeg eerst een passagier toe voordat je koffers toevoegd aan de
+            passagier.
+          </p>
+          <p class="belangrijk">
+            Druk eerst op 'Aanmaken passagier' om de passagier in het systeem
+            toe te voegen.
+          </p>
+          <p class="belangrijk">
+            Daarna kan je een koffer voor de aangemaakte passagier toevoegen
+          </p>
+        </div>
+      </div>
+      <div class="row columns no-pad center">
+        <form action="invoeren-passagier.html" method="get" class="form-gap">
+          <div>
+            <label for="pnummer">Passagiernummer</label>
+            <input
+              type="text"
+              name="pnummer"
+              id="pnummer"
+              minlength="6"
+              maxlength="6"
+              required
+            /><br />
+          </div>
+          <div>
+            <label for="pnaam">Naam</label>
+            <input type="text" name="pnaam" id="pnaam" required /><br />
+          </div>
+          <div>
+            <label for="vnummer">Vluchtnummer</label>
+            <input type="text" name="vnummer" id="vnummer" required /><br />
+          </div>
+          <div>
+            <label for="geslacht">Geslacht</label>
+            <input type="text" name="geslacht" id="geslacht" required /><br />
+          </div>
+          <div>
+            <label for="bnummer">Balienummer</label>
+            <input type="text" name="bnummer" id="bnummer" required /><br />
+          </div>
+          <div>
+            <label for="stoel">Stoel</label>
+            <input type="text" name="stoel" id="stoel" required /><br />
+          </div>
+          <div>
+            <label for="inchecktime">Inchecktijdstip</label>
+            <input
+              type="text"
+              name="inchecktime"
+              id="inchecktime"
+              required
+            /><br />
+          </div>
+          <div>
+            <input type="submit" name="submit" id="submit" />
+          </div>
+        </form>
+        <form action="invoeren-koffer" method="get" class="form-gap">
+          <div>
+            <label for="pnaam-koffer">Naam</label>
+            <input
+              type="text"
+              name="pnaam-koffer"
+              id="pnaam-koffer"
+              required
+            /><br />
+          </div>
+          <div>
+            <label for="Objectnummer">Objectnummer</label>
+            <select name="Objectnummer" id="Objectnummer" required>
+              <option value="">select a option</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option></select
+            ><br />
+          </div>
+          <div>
+            <label for="gewicht">totaal gewicht koffer:</label>
+            <input
+              type="text"
+              name="gewicht"
+              id="gewicht"
+              maxlength="2"
+              required
+            /><br />
+          </div>
+          <div class="submit-koffer">
+            <input type="submit" name="submit-koffer" id="submit-koffer" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <a href="privacyverklaring.html" class="text-w">Pivacyverklaring</a>
+    </footer>
+  </body>
+</html>

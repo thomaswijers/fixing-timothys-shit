@@ -1,129 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Overzicht vluchten</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <header>
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo" class="nav-logo">
-            </a>
-            <h1>Gelre Airport</h1>
-        </header>
-        <main>
-            <p>Overzicht vluchten</p>
-            <form action="vluchtenoverzicht.html" method="get" class="group">
-                <label for="vlucht-tijd-form">Tijd vlucht</label>
-                <input type="text" name="vlucht-tijd-form" id="vlucht-tijd-form">
-                <label for="vlucht-zoek">Zoek vlucht</label>
-                <input type="text" name="vlucht-zoek" id="vlucht-zoek">
-                <input type="submit" name="submit" id="submit">
-            </form>
-            <table>
-                <tr>
-                    <th>vluchtnummer</th>
-                    <th>bestemming</th>
-                    <th>maatschappijcode</th>
-                    <th>max_aantal</th>
-                    <th>max-gewicht-pp</th>
-                    <th>vertrektijd</th>
-                    <th>gatecode</th>
-                </tr>
-                <tr>
-                    <td><a href="vlucht-detail.html">5314</a></td>
-                    <td>GER</td>
-                    <td>TR</td>
-                    <td>120</td>
-                    <td>20</td>
-                    <td>2-1-2023 16:30</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td><a href="vlucht-detail.html">5315</a></td>
-                    <td>DUB</td>
-                    <td>MA</td>
-                    <td>120</td>
-                    <td>20</td>
-                    <td>8-2-2023 10:00</td>
-                    <td>C</td>
-                </tr>
-                <tr>
-                    <td><a href="vlucht-detail.html">5317</a></td>
-                    <td>AUS</td>
-                    <td>KL</td>
-                    <td>160</td>
-                    <td>20</td>
-                    <td>8-2-2023 11:00</td>
-                    <td>B</td>
-                </tr>
-                <tr>
-                    <td><a href="vlucht-detail.html">5318</a></td>
-                    <td>NLD</td>
-                    <td>TR</td>
-                    <td>140</td>
-                    <td>20</td>
-                    <td>8-2-2023 12:00</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td><a href="vlucht-detail.html">5319</a></td>
-                    <td>USA</td>
-                    <td>KL</td>
-                    <td>100</td>
-                    <td>20</td>
-                    <td>8-2-2023 13:00</td>
-                    <td>B</td>
-                </tr>
-                <tr>
-                    <td><a href="vlucht-detail.html">5320</a></td>
-                    <td>MAL</td>
-                    <td>MA</td>
-                    <td>160</td>
-                    <td>20</td>
-                    <td>8-2-2023 14:00</td>
-                    <td>C</td>
-                </tr>
-                <tr>
-                    <td><a href="vlucht-detail.html">5321</a></td>
-                    <td>LON</td>
-                    <td>MA</td>
-                    <td>100</td>
-                    <td>20</td>
-                    <td>8-2-2023 15:00</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td><a href="vlucht-detail.html">5322</a></td>
-                    <td>LON</td>
-                    <td>TR</td>
-                    <td>120</td>
-                    <td>20</td>
-                    <td>8-2-2023 16:00</td>
-                    <td>B</td>
-                </tr>
-            </table>
-        </main>
-        <footer>
-            <a href="privacyverklaring.html">Pivacyverklaring</a>
-        </footer>
-        <div class="sidemenu">
-            <a href="index.html" class="homebutton">Uitloggen</a>
-            <div class="dropdown-element">
-                <a href="ingelogd-passagier.html" class="dropdown-sidebtn">Navigatie</a>
-                <div class="dropdown-content">
-                    <a href="passagier-koffer.html">Inchecken koffer</a>
-                    <a href="persoonlijke-vluchten.html">Geboekte vluchten</a>
-                    <a href="vluchtenoverzicht.html">Overzicht vluchten</a>
-                </div>
-            </div>
+  <body>
+    <header class="navigation-bar">
+      <nav class="header-container">
+        <a href="index.html" class="img-link left">
+          <img src="images/logo.png" alt="Logo" class="nav-logo" />
+        </a>
+        <h1 class="center">Gelre Airport</h1>
+        <div class="right"></div>
+      </nav>
+    </header>
+    <div class="back-header"></div>
+    <div class="sidebar">
+      <a href="index.html" class="homebutton"><span>Uitloggen</span></a>
+      <div class="dropdown">
+        <a href="ingelogd-medewerker.html" class="dropdown-sidebtn"
+          >Navigatie</a
+        >
+        <div class="dropdown-content">
+          <a href="passagier-koffer.html">Inchecken koffer</a>
+          <a href="persoonlijke-vluchten.html">Geboekte vluchten</a>
+          <a href="vluchtenoverzicht.html">Overzicht vluchten</a>
         </div>
+      </div>
     </div>
-</body>
+    <main>
+      <div class="row center-content">
+        <p>Overzicht vluchten</p>
+        <form action="vluchtenoverzicht.html" method="get" class="group">
+          <label for="vlucht-tijd-form">Tijd vlucht</label>
+          <input type="text" name="vlucht-tijd-form" id="vlucht-tijd-form" />
+          <label for="vlucht-zoek">Zoek vlucht</label>
+          <input type="text" name="vlucht-zoek" id="vlucht-zoek" />
+          <input type="submit" name="submit" id="submit" />
+        </form>
+        <table>
+          <tr>
+            <th>vluchtnummer</th>
+            <th>bestemming</th>
+            <th>maatschappijcode</th>
+            <th>max_aantal</th>
+            <th>max-gewicht-pp</th>
+            <th>vertrektijd</th>
+            <th>gatecode</th>
+          </tr>
+          <tr>
+            <td><a href="vlucht-detail.html">5314</a></td>
+            <td>GER</td>
+            <td>TR</td>
+            <td>120</td>
+            <td>20</td>
+            <td>2-1-2023 16:30</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td><a href="vlucht-detail.html">5315</a></td>
+            <td>DUB</td>
+            <td>MA</td>
+            <td>120</td>
+            <td>20</td>
+            <td>8-2-2023 10:00</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td><a href="vlucht-detail.html">5317</a></td>
+            <td>AUS</td>
+            <td>KL</td>
+            <td>160</td>
+            <td>20</td>
+            <td>8-2-2023 11:00</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td><a href="vlucht-detail.html">5318</a></td>
+            <td>NLD</td>
+            <td>TR</td>
+            <td>140</td>
+            <td>20</td>
+            <td>8-2-2023 12:00</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td><a href="vlucht-detail.html">5319</a></td>
+            <td>USA</td>
+            <td>KL</td>
+            <td>100</td>
+            <td>20</td>
+            <td>8-2-2023 13:00</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td><a href="vlucht-detail.html">5320</a></td>
+            <td>MAL</td>
+            <td>MA</td>
+            <td>160</td>
+            <td>20</td>
+            <td>8-2-2023 14:00</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td><a href="vlucht-detail.html">5321</a></td>
+            <td>LON</td>
+            <td>MA</td>
+            <td>100</td>
+            <td>20</td>
+            <td>8-2-2023 15:00</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td><a href="vlucht-detail.html">5322</a></td>
+            <td>LON</td>
+            <td>TR</td>
+            <td>120</td>
+            <td>20</td>
+            <td>8-2-2023 16:00</td>
+            <td>B</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <a href="privacyverklaring.html" class="text-w">Pivacyverklaring</a>
+    </footer>
+  </body>
+</html>

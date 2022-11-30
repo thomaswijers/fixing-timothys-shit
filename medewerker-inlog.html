@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>medewerker-inlog</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <header>
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo" class="nav-logo">
-            </a>
-            <h1>Gelre Airport</h1>
-        </header>
-        <main>
-            <p>U wilt inloggen als medewerker.</p>
-            <p>Vul uw account gegevens van uw Gelre Airport account in:</p>
-            <nav>
-                <div class="invoer-flexbox">
-                    <form action="ingelogd-medewerker.html" method="get">
-                        <label for="memail">E-mail:</label><br>
-                        <input type="email" id="memail" name="memail" required><br>
-                        <label for="mww">Wachtwoord</label><br>
-                        <input type="password" id="mww" name="mww" minlength="8" required>
-                        <div class="submit">
-                            <label for="submit"></label><br>
-                            <input type="submit" id="submit" name="submit" value="Log in">
-                        </div>
-                    </form>
-                </div>
-
-            </nav>
-        </main>
-        <footer>
-            <a href="privacyverklaring.html">Pivacyverklaring</a>
-        </footer>
-        <div class="sidemenu">
-            <a href="index.html" class="homebutton">Uitloggen</a>
-        </div>
+  <body>
+    <header class="navigation-bar">
+      <nav class="header-container">
+        <a href="index.html" class="img-link left">
+          <img src="images/logo.png" alt="Logo" class="nav-logo" />
+        </a>
+        <h1 class="center">Gelre Airport</h1>
+        <div class="right"></div>
+      </nav>
+    </header>
+    <div class="back-header"></div>
+    <div class="sidebar">
+      <a href="index.html" class="homebutton"><span>Uitloggen</span></a>
     </div>
-</body>
-
+    <main>
+      <div class="row center-content login">
+        <p>U wilt inloggen als medewerker.</p>
+        <p>Vul uw account gegevens van uw Gelre Airport account in:</p>
+        <div class="login-from">
+          <form action="ingelogd-passagier.html" method="get">
+            <label for="pname">Passagiersnummer:</label><br />
+            <input
+              type="text"
+              id="pname"
+              name="pname"
+              minlength="6"
+              maxlength="6"
+              required
+            /><br />
+            <label for="pww">Wachtwoord</label><br />
+            <input type="password" id="pww" name="pww" minlength="8" required />
+            <label for="submit"></label><br />
+            <input type="submit" id="submit-btn" name="submit" value="Log in" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="privacyverklaring.html" class="text-w">Pivacyverklaring</a>
+    </footer>
+  </body>
 </html>

@@ -1,83 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Invoeren vlucht</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <header>
-            <a href="index.html">
-                <img src="images/logo.png" alt="Logo" class="nav-logo">
-            </a>
-            <h1>Gelre Airport</h1>
-        </header>
-        <main>
-            <p>Voer een nieuwe vlucht in:
-            <p>
-            <p class="belangrijk"> Alle velden moeten worden ingevuld!</p>
-            <form action="invoeren-vlucht.html" method="get" class="invoer-flexbox">
-                <div class="flexbox-left">
-                    <div>
-                        <label for="vluchtnummer">Vluchtnummer</label>
-                        <input type="text" name="vluchtnummer" id="vluchtnummer" required><br>
-                    </div>
-                    <div>
-                        <label for="bestemming">Bestemming</label>
-                        <input type="text" name="bestemming" id="bestemming" required><br>
-                    </div>
-                    <div>
-                        <label for="maatschappijcode">Maatschappijcode</label>
-                        <input type="text" name="maatschappijcode" id="maatschappijcode" required><br>
-                    </div>
-                    <div>
-                        <label for="max_aantal">Max aantal</label>
-                        <input type="text" name="max_aantal" id="max_aantal" required><br>
-                    </div>
-                    <div class="submit-right">
-                        <input type="submit" name="submit" id="submit">
-                    </div>
-                </div>
-                <div class="flexbox-right">
-                    <div>
-                        <label for="max_gewicht_pp">Max gewicht pp</label>
-                        <input type="text" name="max_gewicht_pp" id="max_gewicht_pp" required><br>
-                    </div>
-                    <div>
-                        <label for="max_totaalgewicht">Max totaalgewicht</label>
-                        <input type="text" name="max_totaalgewicht" id="max_totaalgewicht" required><br>
-                    </div>
-                    <div>
-                        <label for="vertrektijd">Vertrektijd</label>
-                        <input type="text" name="vertrektijd" id="vertrektijd" required><br>
-                    </div>
-                    <div>
-                        <label for="gatecode">Gatecode</label>
-                        <input type="text" name="gatecode" id="gatecode" required><br>
-                    </div>
-                </div>
-            </form>
-        </main>
-        <footer>
-            <a href="privacyverklaring.html">Pivacyverklaring</a>
-        </footer>
-        <div class="sidemenu">
-            <a href="index.html" class="homebutton">Uitloggen</a>
-            <div class="dropdown-element">
-                <a href="ingelogd-medewerker.html" class="dropdown-sidebtn">Navigatie</a>
-                <div class="dropdown-content">
-                    <a href="vluchtenoverzicht.html">Overzicht vluchten</a>
-                    <a href="invoeren-vlucht.html">Invoeren vlucht</a>
-                    <a href="invoeren-passagier.html">Invoeren passagier</a>
-                </div>
-            </div>
+  <body>
+    <header class="navigation-bar">
+      <nav class="header-container">
+        <a href="index.html" class="img-link left">
+          <img src="images/logo.png" alt="Logo" class="nav-logo" />
+        </a>
+        <h1 class="center">Gelre Airport</h1>
+        <div class="right"></div>
+      </nav>
+    </header>
+    <div class="back-header"></div>
+    <div class="sidebar">
+      <a href="index.html" class="homebutton"><span>Uitloggen</span></a>
+      <div class="dropdown">
+        <a href="ingelogd-medewerker.html" class="dropdown-sidebtn"
+          >Navigatie</a
+        >
+        <div class="dropdown-content">
+          <a href="vluchtenoverzicht.html">Overzicht vluchten</a>
+          <a href="invoeren-vlucht.html">Invoeren vlucht</a>
+          <a href="invoeren-passagier.html">Invoeren passagier</a>
         </div>
+      </div>
     </div>
-</body>
+    <main>
+      <div class="row center-content">
+        <p>Voer een nieuwe vlucht in:</p>
+        <p></p>
+        <p class="belangrijk">Alle velden moeten worden ingevuld!</p>
+        <form
+          action="invoeren-vlucht.html"
+          method="get"
+          class="invoer-vlucten-form"
+        >
+          <div class="form-column">
+            <div>
+              <label for="vluchtnummer">Vluchtnummer</label>
+              <input
+                type="text"
+                name="vluchtnummer"
+                id="vluchtnummer"
+                required
+              /><br />
+            </div>
+            <div>
+              <label for="bestemming">Bestemming</label>
+              <input
+                type="text"
+                name="bestemming"
+                id="bestemming"
+                required
+              /><br />
+            </div>
+            <div>
+              <label for="maatschappijcode">Maatschappijcode</label>
+              <input
+                type="text"
+                name="maatschappijcode"
+                id="maatschappijcode"
+                required
+              /><br />
+            </div>
+            <div>
+              <label for="max_aantal">Max aantal</label>
+              <input
+                type="text"
+                name="max_aantal"
+                id="max_aantal"
+                required
+              /><br />
+            </div>
+          </div>
+          <div class="form-column">
+            <div>
+              <label for="max_gewicht_pp">Max gewicht pp</label>
+              <input
+                type="text"
+                name="max_gewicht_pp"
+                id="max_gewicht_pp"
+                required
+              /><br />
+            </div>
+            <div>
+              <label for="max_totaalgewicht">Max totaalgewicht</label>
+              <input
+                type="text"
+                name="max_totaalgewicht"
+                id="max_totaalgewicht"
+                required
+              /><br />
+            </div>
+            <div>
+              <label for="vertrektijd">Vertrektijd</label>
+              <input
+                type="text"
+                name="vertrektijd"
+                id="vertrektijd"
+                required
+              /><br />
+            </div>
+            <div>
+              <label for="gatecode">Gatecode</label>
+              <input type="text" name="gatecode" id="gatecode" required /><br />
+            </div>
+          </div>
+          <input type="submit" name="submit" id="submit" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <a href="privacyverklaring.html" class="text-w">Pivacyverklaring</a>
+    </footer>
+  </body>
 </html>
